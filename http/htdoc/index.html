@@ -1,0 +1,56 @@
+<html>
+	<head> 
+		<meta http-equiv="Content-Type" content="text/html"  charset=utf-8" />
+		<title > MY_HTTP </title>
+	</head>
+
+<body background = "images/bg.jpg">
+
+	<marquee onmouseover=this.stop() onmouseout=this.start() align=buttom
+			 scrollAmount=1 scrollDelay=10 direction=right  height=20 bgcolor="#ff0000">	
+     Welcome	To	My	Http	<br>
+	</marquee>	
+
+	<table>
+		<tr>
+			<td align="center">
+			<form action="cgi/math_cgi", method="POST">
+				<h3> MATH_ADD </h3>
+				Please Enter Your data1:<br/> <input type="text" name="data1"/> <br/>
+				Please Enter Your data2:<br/> <input type="text" name="data2"/> <br/><br/>
+				<input type="submit" value="submit"/> <br/>
+			</form>
+			</td>
+
+			<td width="60%" align="center">
+				<form action="cgi/insert_cgi", method="POST"  accept-charset="utf-8" >
+					<h3> INSERT </h3>
+						name:			  <input type="text" name="name"/> <br/>
+						sex :&nbsp;&nbsp; <input type="text" name="sex"/> <br/>
+						age :&nbsp;&nbsp; <input type="text" name="age"/> <br/>
+						school :		  <input type="text" name="school"/> <br/><br/>
+						<input type="submit" value="submit"/> <br/>
+				</form>
+			</td>
+
+			<td width>
+				<form action="cgi/select_cgi", method="POST">
+					<h3> SELECT </h3>
+					<input type="submit" value="select"/> <br/>
+				</form>
+			</td>
+
+		</tr>
+
+	</table>
+
+	<form action="cgi/date_cgi", method="POST">
+		<h3> MATH_DATE </h3>
+		Please Enter Your birthday:<br/> <input type="text" name="date1"/> [格式：1995-5-5] <br/>
+		Please Enter Now date  :   <br/> <input type="text" name="date2"/> [格式：2016-1-1]<br/><br/>
+		<input type="submit" value="submit"/> <br/>
+	</form>
+
+</body>
+</html>
+
